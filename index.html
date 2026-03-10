@@ -1,6 +1,17 @@
-<div class="math-section">
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+}
+
+/* MAIN SECTION */
 
 .math-section{
 display:flex;
@@ -8,7 +19,6 @@ gap:60px;
 max-width:1200px;
 margin:auto;
 padding:80px 20px;
-font-family:Arial, sans-serif;
 align-items:flex-start;
 }
 
@@ -17,21 +27,27 @@ align-items:flex-start;
 .math-image{
 flex:1;
 position:sticky;
-top:100px;
+top:80px;
+height:calc(100vh - 120px);
+display:flex;
+align-items:center;
+justify-content:center;
 }
 
 .math-image img{
-width:100%;
-height:auto;
-display:block;
-border-radius:8px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
+max-height:100%;
+max-width:100%;
+width:auto;
+object-fit:contain;
 }
 
 /* TEXT SIDE */
 
 .math-text{
 flex:1.2;
+max-height:calc(100vh - 120px);
+overflow-y:auto;
+padding-right:10px;
 }
 
 .math-text h2{
@@ -39,6 +55,8 @@ font-size:32px;
 margin-bottom:30px;
 color:#2a2a2a;
 }
+
+/* COURSE BLOCK */
 
 .course-block{
 margin-bottom:40px;
@@ -66,7 +84,7 @@ line-height:1.7;
 color:#555;
 }
 
-/* MOBILE RESPONSIVE */
+/* MOBILE */
 
 @media(max-width:900px){
 
@@ -78,16 +96,27 @@ padding:40px 20px;
 
 .math-image{
 position:relative;
-top:auto;
+height:auto;
+}
+
+.math-text{
+max-height:none;
+overflow:visible;
 }
 
 }
 
 </style>
 
+</head>
+
+<body>
+
+<div class="math-section">
+
 <div class="math-image">
 
-<img src="https://res.cloudinary.com/dsrqrz9jq/image/upload/v1773170112/tree_transparent_geudsd.png">
+<img src="https://res.cloudinary.com/dsrqrz9jq/image/upload/v1773172339/treeinfov2_2_jcao2d.png">
 
 </div>
 
@@ -115,7 +144,7 @@ Explore Math Empowered’s four signature instructional practices: Math Talks, P
 <div class="course-type">Asynchronous Learning</div>
 <div class="course-title">Unpacking the Kit (15–30 minutes)</div>
 <div class="course-desc">
-Get your BFF Fluency intervention materials ready for immediate classroom use. In this short course, participants learn how to efficiently unpack, organize, and prepare the resources included in the kit.
+Get your BFF Fluency intervention materials ready for immediate classroom use. In this short course, participants learn how to efficiently unpack, organize, and prepare the resources included in the kit so they can begin supporting student learning right away.
 </div>
 </div>
 
@@ -123,7 +152,7 @@ Get your BFF Fluency intervention materials ready for immediate classroom use. I
 <div class="course-type">Live Virtual Session</div>
 <div class="course-title">BFF Multiplication Deep Dive (120 minutes)</div>
 <div class="course-desc">
-Join a Math Empowered team member for an interactive session exploring the mathematics behind the BFF Multiplication Kit and the thinking pathways embedded throughout the materials.
+Join a Math Empowered team member for an interactive session exploring the mathematics behind the BFF Multiplication Kit. Together we will examine the progression from conceptual understanding → reasoning strategies → efficient procedures, and explore the thinking pathways embedded throughout the materials.
 </div>
 </div>
 
@@ -131,10 +160,13 @@ Join a Math Empowered team member for an interactive session exploring the mathe
 <div class="course-type">Live Virtual Session</div>
 <div class="course-title">Follow-Up Session (60 minutes)</div>
 <div class="course-desc">
-Reconnect with a Math Empowered facilitator after implementing the BFF Kit in your classroom. Participants reflect on experiences, share successes and challenges, and deepen their understanding of supporting mathematical fluency.
+Reconnect with a Math Empowered facilitator after implementing the BFF Kit in your classroom. Participants reflect on their experiences, share student successes and challenges, and deepen their understanding of how to support students along the thinking pathways toward mathematical fluency.
 </div>
 </div>
 
 </div>
 
 </div>
+
+</body>
+</html>
